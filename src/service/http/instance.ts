@@ -97,6 +97,7 @@ export default class createAxiosInstance {
           default:
             message = `连接出错(${err.response.status})!`;
         }
+        console.log(message);
         // 这里是AxiosError类型，所以一般我们只reject我们需要的响应即可
         return Promise.reject(err.response);
       },

@@ -1,46 +1,23 @@
-// {
-//   "compilerOptions": {
-//     "baseUrl": ".",
-//     "target": "ESNext",
-//     "useDefineForClassFields": true,
-//     "module": "ESNext",
-//     "moduleResolution": "Node",
-//     "strict": true,
-//     "jsx": "preserve",
-//     "sourceMap": true,
-//     "resolveJsonModule": true,
-//     "isolatedModules": true,
-//     "esModuleInterop": true,
-//     "lib": ["ESNext", "DOM"],
-//     "skipLibCheck": true,
-//     "paths": {
-//       "~/*": ["./*"],
-//       "@/*": ["./src/*"]
-//     },
-//     "types": ["node", "vite/client", "naive-ui/volar"]
-//   }
-//   // "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
-// }
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "module": "ESNext",
     "target": "ESNext",
-    "lib": ["DOM", "ESNext"],
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "strict": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "jsx": "preserve",
-    "moduleResolution": "node",
+    "sourceMap": true,
     "resolveJsonModule": true,
-    "noUnusedLocals": true,
-    "strictNullChecks": true,
-    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
     "paths": {
       "~/*": ["./*"],
       "@/*": ["./src/*"]
     },
-    "types": ["node", "naive-ui/volar"]
+    "types": ["node", "vite/client", "naive-ui/volar"]
   },
-  "exclude": ["node_modules", "dist"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
