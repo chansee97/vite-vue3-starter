@@ -1,6 +1,6 @@
 ## See-template
 
-一个基于vue3、vite3、unocss、ts、naiveUI、vue-router的空白项目模板
+一个基于vue3、vite3、unocss、ts、naiveUI、vue-router、axios的空白项目模板
 
 ## Demo
 
@@ -16,6 +16,7 @@
 - 支持eslint检查，prettiar美化
 - husk + conventional + lint-staged ，完善git提交规范
 - 配置了基本的vue-router路由界面和配置
+- 配置多实例可配置的axios请求方式，灵活、功能强大
 - 支持并配置了unocss
 - 内置naiveUI
 
