@@ -17,7 +17,7 @@
       "~/*": ["./*"],
       "@/*": ["./src/*"]
     },
-    "types": ["node", "vite/client", "naive-ui/volar"]
+    "types": ["vite/client", "naive-ui/volar"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

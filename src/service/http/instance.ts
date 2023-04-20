@@ -31,10 +31,7 @@ export default class createAxiosInstance {
   // 设置类拦截器
   setInterceptor() {
     this.instance.interceptors.request.use(
-      (config: AxiosRequestConfig) => {
-        // 一般会请求拦截里面加token
-        // const token = localStorage.getItem('token') as string;
-        // config.headers!.Authorization = token;
+      (config) => {
         return config;
       },
       (err: any) => Promise.reject(err),

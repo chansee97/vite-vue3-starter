@@ -28,9 +28,9 @@ const serviceEnv: ServiceEnv = {
  * @param env 环境
  */
 export function getServiceEnvConfig(env: ImportMetaEnv) {
-  const { VITE_SERVICE_ENV = 'dev' } = env;
+  const { MODE = 'dev' } = env;
 
-  const config = serviceEnv[VITE_SERVICE_ENV];
+  const config = serviceEnv[MODE];
 
   return config;
 }
