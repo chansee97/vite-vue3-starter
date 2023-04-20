@@ -35,7 +35,7 @@ interface ImportMetaEnv {
   /** 本地存储前缀 */
   readonly VITE_STORAGE_PREFIX?: string;
   /** 后端服务的环境类型 */
-  readonly VITE_SERVICE_ENV?: ServiceEnvType;
+  readonly MODE?: ServiceEnvType;
 }
 
 interface ImportMeta {

@@ -1,8 +1,12 @@
 <template>
   <div text-center flex-col-center wh-full>
-    <h1 font="bold" text-5xl>{{ msg }}</h1>
+    <h1 font="bold" text-5xl>
+      {{ msg }}
+      <screenshot theme="outline" size="39" fill="#333" />
+    </h1>
     <div m-10>
       Already configured:
+      <i-carbon-accessibility />
       vue3、vite3、unocss、eslint、prettier、ts、tsx、conventional、husk、lint-staged、vue-router、axios
     </div>
     <div c-lightBlue><router-link to="/">Go to layout</router-link></div>

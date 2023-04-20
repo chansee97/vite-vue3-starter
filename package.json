@@ -3,61 +3,50 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "cross-env VITE_SERVICE_ENV=dev vite",
-    "dev:test": "cross-env VITE_SERVICE_ENV=test vite",
-    "dev:prod": "cross-env VITE_SERVICE_ENV=prod vite",
+    "dev": "vite --mode dev ",
+    "dev:test": "vite --mode test ",
+    "dev:prod": "vite --mode prod ",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "prettier": "prettier --write  \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts,.json --fix",
-    "prepare": "husky install",
-    "commit": "cz",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-customizable"
-    }
+    "lint": "eslint . --fix",
+    "stylelint:fix": "npx stylelint *.{css,scss,vue,less,html} --fix"
   },
   "lint-staged": {
-    "./src/**/*.{vue,js,jsx,ts,tsx,json}": "eslint --fix",
-    "./src/**/*.{js,jsx,ts,tsx,less,json}": "prettier --loglevel warn --write"
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.{css,scss,less,html}": [
+      "stylelint --fix"
+    ],
+    "*.vue": [
+      "eslint --fix",
+      "stylelint --fix"
+    ]
+  },
+  "simple-git-hooks": {
+    "commit-msg": "npx --no-install commitlint --edit $HUSKY_GIT_PARAMS ",
+    "pre-commit": "pnpm lint-staged"
   },
   "dependencies": {
-    "axios": "^0.27.2",
-    "vue": "^3.2.37",
-    "vue-router": "^4.1.3"
+    "axios": "^1.3.6",
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
-    "@typescript-eslint/eslint-plugin": "^5.32.0",
-    "@typescript-eslint/parser": "^5.32.0",
-    "@vitejs/plugin-vue": "^3.0.0",
-    "@vitejs/plugin-vue-jsx": "^2.0.0",
-    "@vue/eslint-config-prettier": "^7.0.0",
-    "@vue/eslint-config-typescript": "^11.0.0",
-    "commitizen": "^4.2.5",
-    "cross-env": "^7.0.3",
-    "cz-conventional-changelog": "^3.3.0",
-    "cz-customizable": "^6.9.1",
-    "eslint": "^8.21.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-vue": "^9.3.0",
-    "husky": "^8.0.0",
-    "lint-staged": "^13.0.3",
-    "naive-ui": "^2.32.1",
-    "prettier": "^2.7.1",
-    "rollup-plugin-visualizer": "^5.7.1",
-    "typescript": "^4.6.4",
-    "unocss": "^0.45.5",
-    "unplugin-vue-components": "^0.22.0",
-    "vite": "^3.0.0",
+    "@commitlint/cli": "^17.6.1",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "eslint": "^8.38.0",
+    "lint-staged": "^13.2.1",
+    "naive-ui": "^2.34.3",
+    "rollup-plugin-visualizer": "^5.9.0",
+    "simple-git-hooks": "^2.8.1",
+    "stylelint": "^15.5.0",
+    "typescript": "^5.0.4",
+    "unocss": "^0.51.5",
+    "unplugin-vue-components": "^0.24.1",
+    "vite": "^4.3.0",
     "vite-plugin-compression": "^0.5.1",
-    "vite-plugin-html": "^3.2.0",
-    "vue-tsc": "^0.38.4"
+    "vue-tsc": "^1.2.0"
   }
 }

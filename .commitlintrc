@@ -1,0 +1,3 @@
+{
+  "extends": "@chansee97/commitlint-config"
+}
