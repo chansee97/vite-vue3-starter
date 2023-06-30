@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import { setupRouter } from './router'
 import 'uno.css'
-import '@unocss/reset/tailwind.css'
+import '@unocss/reset/tailwind-compat.css'
 import '@/styles/index.css'
 
 async function setupApp() {

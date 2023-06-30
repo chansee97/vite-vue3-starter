@@ -1,4 +1,6 @@
-import { defineConfig, presetUno, presetAttributify, presetIcons } from 'unocss'; // https://github.com/unocss/unocss
+import { defineConfig, presetAttributify, presetIcons, presetUno } from 'unocss'
+
+// https://github.com/unocss/unocss
 export default defineConfig({
   presets: [presetUno(), presetAttributify(), presetIcons()],
   shortcuts: {
@@ -6,4 +8,4 @@ export default defineConfig({
     'flex-center': 'flex justify-center items-center',
     'flex-col-center': 'flex-center flex-col',
   },
-});
+})

@@ -1,6 +1,7 @@
-import { defineConfig, loadEnv, ConfigEnv } from 'vite'
+import { resolve } from 'node:path'
+import type { ConfigEnv } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import { setVitePlugins } from './build'
-import { resolve } from 'path'
 
 // 当前执行node命令时文件夹的地址（工作目录）
 const rootPath: string = resolve(process.cwd())
@@ -13,7 +14,7 @@ export default defineConfig(({ command, mode }: ConfigEnv) => {
   // 根据当前工作目录中的 `mode` 加载 .env 文件
   // 设置第三个参数为 '' 来加载所有环境变量，而不管是否有 `VITE_` 前缀。
   const env = loadEnv(mode, process.cwd(), '') as unknown as ImportMetaEnv
-  
+
   return {
     base: env.VITE_BASE_URL,
     plugins: setVitePlugins(),

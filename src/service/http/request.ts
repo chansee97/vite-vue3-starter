@@ -1,5 +1,5 @@
-import type { AxiosRequestConfig } from 'axios';
-import createAxiosInstance from './instance';
+import type { AxiosRequestConfig } from 'axios'
+import CreateAxiosInstance from './instance'
 
 /**
  * @description:
@@ -8,8 +8,8 @@ import createAxiosInstance from './instance';
  * @return {*}
  */
 export function createRequest(axiosConfig: AxiosRequestConfig, backendConfig?: Service.BackendResultConfig) {
-  const axiosInstance = new createAxiosInstance(axiosConfig, backendConfig);
-  const { instance } = axiosInstance;
+  const axiosInstance = new CreateAxiosInstance(axiosConfig, backendConfig)
+  const { instance } = axiosInstance
 
   /**
    * @description: 通用请求方法
@@ -19,10 +19,10 @@ export function createRequest(axiosConfig: AxiosRequestConfig, backendConfig?: S
    * @param {AxiosRequestConfig} config - 请求配置
    * @return {*}
    */
-  type RequestMethod = 'get' | 'post' | 'put' | 'delete' | 'patch';
+  type RequestMethod = 'get' | 'post' | 'put' | 'delete' | 'patch'
   const request = async (url: string, method: RequestMethod = 'get', data: any, config?: AxiosRequestConfig) => {
-    return instance(url, { method, data, ...config });
-  };
+    return instance(url, { method, data, ...config })
+  }
 
   /**
    * @description: get请求
@@ -30,8 +30,8 @@ export function createRequest(axiosConfig: AxiosRequestConfig, backendConfig?: S
    * @return {*}
    */
   const get = async (url: string, config?: AxiosRequestConfig) => {
-    return instance.get(url, config);
-  };
+    return instance.get(url, config)
+  }
 
   /**
    * post请求
@@ -40,8 +40,8 @@ export function createRequest(axiosConfig: AxiosRequestConfig, backendConfig?: S
    * @param config - axios配置
    */
   const post = async (url: string, data?: any, config?: AxiosRequestConfig) => {
-    return instance.post(url, data, config);
-  };
+    return instance.post(url, data, config)
+  }
 
   /**
    * Delete请求
@@ -49,8 +49,8 @@ export function createRequest(axiosConfig: AxiosRequestConfig, backendConfig?: S
    * @param config - axios配置
    */
   const Delete = async (url: string, config?: AxiosRequestConfig) => {
-    return instance.delete(url, config);
-  };
+    return instance.delete(url, config)
+  }
 
   /**
    * put请求
@@ -59,8 +59,8 @@ export function createRequest(axiosConfig: AxiosRequestConfig, backendConfig?: S
    * @param config - axios配置
    */
   const put = async (url: string, data?: any, config?: AxiosRequestConfig) => {
-    return instance.put(url, data, config);
-  };
+    return instance.put(url, data, config)
+  }
 
   /**
    * patch请求
@@ -69,8 +69,8 @@ export function createRequest(axiosConfig: AxiosRequestConfig, backendConfig?: S
    * @param config - axios配置
    */
   const patch = async (url: string, data?: any, config?: AxiosRequestConfig) => {
-    return instance.patch(url, data, config);
-  };
+    return instance.patch(url, data, config)
+  }
 
   return {
     request,
@@ -79,5 +79,5 @@ export function createRequest(axiosConfig: AxiosRequestConfig, backendConfig?: S
     Delete,
     put,
     patch,
-  };
+  }
 }
