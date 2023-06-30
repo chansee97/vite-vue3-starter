@@ -1,6 +1,7 @@
 <template>
-  <div text-center c-blue>I prove that you have made the jump test1.</div>
-  <div text-center cursor-pointer>
+  <div  class="text-center text-3xl">you can test axios in here</div>
+  <div class="text-center cursor-pointer">
+    <div class="my-2em"><router-link to="/home"> ⬅ Back Home</router-link></div>
     <div hover:c-blue @click="pinter">click check env</div>
     <div hover:c-blue @click="get">click to get</div>
     <div hover:c-blue @click="post">click to post</div>
@@ -8,6 +9,7 @@
     <div hover:c-blue @click="put">click to put</div>
     <div hover:c-blue @click="patch">click to patch</div>
   </div>
+  
 </template>
 
 <script setup lang="ts">

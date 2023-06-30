@@ -1,13 +1,22 @@
 {
-  // 缩进
   "editor.tabSize": 2,
-  // 保存eslint校验
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
   },
+  "prettier.enable": false,
   "eslint.format.enable": true,
-  // 校验那些文件
-  "eslint.validate": ["typescript", "javascript", "vue", "html"],
-  // 保存自动格式化
-  "editor.formatOnSave": true
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml"
+  ]
 }

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// import { darkTheme } from 'naive-ui';
 import { zhCN, dateZhCN, GlobalThemeOverrides } from 'naive-ui';
 
 const locale = zhCN;

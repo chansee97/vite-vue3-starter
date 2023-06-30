@@ -1,16 +1,16 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-import { setupRouter } from './router';
-import { setupAssets } from './plugins';
+import { createApp } from 'vue'
+import App from './App.vue'
+import { setupRouter } from './router'
+import 'uno.css'
+import '@unocss/reset/tailwind.css'
+import '@/styles/index.css'
 
 async function setupApp() {
-  // 引入静态资源
-  setupAssets();
   // 创建vue实例
-  const app = createApp(App);
+  const app = createApp(App)
   // 安装router
-  await setupRouter(app);
+  await setupRouter(app)
   // 挂载
-  app.mount('#app');
+  app.mount('#app')
 }
-setupApp();
+setupApp()
