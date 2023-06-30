@@ -1,7 +1,7 @@
 <template>
   <div  class="text-center text-3xl">you can test axios in here</div>
   <div class="text-center cursor-pointer">
-    <div class="my-2em"><router-link to="/home"> ⬅ Back Home</router-link></div>
+    <div class="my-2em c-emerald-500 hover:underline"><router-link to="/home"> ⬅ Back Home</router-link></div>
     <div hover:c-blue @click="pinter">click check env</div>
     <div hover:c-blue @click="get">click to get</div>
     <div hover:c-blue @click="post">click to post</div>
