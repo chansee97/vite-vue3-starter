@@ -1,4 +1,4 @@
-import { BasicLayout } from '../layouts/index'
+import layout from '@/layouts/index.vue'
 import type {RouteRecordRaw} from 'vue-router'
 
 export const routes: RouteRecordRaw[] = [
@@ -6,7 +6,7 @@ export const routes: RouteRecordRaw[] = [
     path: '/',
     name: 'root',
     redirect: '/home',
-    component: BasicLayout,
+    component: layout,
     children: [
       {
         path: '/home',
@@ -23,7 +23,7 @@ export const routes: RouteRecordRaw[] = [
   {
     path: '/:pathMatch(.*)*',
     name: '404',
-    component: () => import('@/views/inherit-page/404.vue'),
+    component: () => import('@/views/_inner/404.vue'),
     meta: {
       title: '错误404',
     },

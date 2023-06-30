@@ -6,9 +6,9 @@
     "dev": "vite --mode dev ",
     "dev:test": "vite --mode test ",
     "dev:prod": "vite --mode prod ",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --fix",
+    "lint:fix": "eslint . --fix",
     "stylelint:fix": "npx stylelint *.{css,scss,vue,less,html} --fix"
   },
   "lint-staged": {

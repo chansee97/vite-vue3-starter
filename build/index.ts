@@ -4,7 +4,6 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import Components from 'unplugin-vue-components/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import AutoImport from 'unplugin-auto-import/vite'
-import type { ProxyOptions } from 'vite'
 
 export function setVitePlugins() {
   const plugins = [
@@ -22,28 +21,4 @@ export function setVitePlugins() {
     }),
   ]
   return plugins
-}
-
-export function createViteProxy(
-  isOpenProxy: boolean,
-  envConfig: ServiceEnvConfig
-) {
-  if (!isOpenProxy) return undefined
-
-  const proxy: Record<string, string | ProxyOptions> = {
-    [envConfig.urlPattern]: {
-      target: envConfig.url,
-      changeOrigin: true,
-      rewrite: (path) =>
-        path.replace(new RegExp(`^${envConfig.urlPattern}`), ''),
-    },
-    [envConfig.secondUrlPattern]: {
-      target: envConfig.secondUrl,
-      changeOrigin: true,
-      rewrite: (path) =>
-        path.replace(new RegExp(`^${envConfig.secondUrlPattern}`), ''),
-    },
-  }
-
-  return proxy
 }

@@ -1,10 +1,6 @@
-import { getServiceEnvConfig } from '~/.env-config';
+
 import { createRequest } from './request';
 
-const { url, urlPattern } = getServiceEnvConfig(import.meta.env);
+const baseURL = 'https://mock.mengxuegu.com/mock/61e4df7c17249f68847fc191/api'
 
-const isHttpProxy = import.meta.env.VITE_HTTP_PROXY === 'Y';
-
-export const request = createRequest({ baseURL: isHttpProxy ? urlPattern : url });
-
-// export const secondRequest = createRequest({ baseURL: isHttpProxy ? secondUrlPattern : secondUrl });
+export const request = createRequest({ baseURL });
