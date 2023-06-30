@@ -11,12 +11,6 @@ interface ImportMetaEnv {
   readonly VITE_BASE_URL: string
   /** 项目标题 */
   readonly VITE_APP_TITLE: string
-  /** hash路由模式 */
-  readonly VITE_HASH_ROUTE?: 'Y' | 'N'
   /** 后端服务的环境类型 */
   readonly MODE?: ServiceEnvType
-}
-
-interface ImportMeta {
-  readonly env: ImportMetaEnv
 }

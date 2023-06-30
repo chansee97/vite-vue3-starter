@@ -1,55 +1,39 @@
-## See-template
+<div align='center'>
+  <img src="/public/favicon.svg" width="150"/>
+</div>
 
-一个基于vue3、vite4、unocss、ts、naiveUI、vue-router、axios的空白项目模板
+<div align='center'>
+  <h1>Virtuoso</h1>
+</div>
 
-## Demo
 
-- [示例网页](https://see-template.vercel.app/)
+<div align='center' >
+  A quick start template for a vue project
+</div>
 
-## 代码仓库
 
-- [github](https://github.com/chen-see/ench-admin)
+<div align='center' style="margin:2em 0;">
 
-## 基本配置
-- 完善的vite本地build配置
-- 支持ts、tsx
-- 支持eslint、stylelint检查
-- simple-git-hooks + lint-staged ，完善git提交规范
-- 配置了基本的vue-router路由界面和配置
-- 配置多实例可配置的axios请求方式，灵活、功能强大
-- 支持并配置了unocss
-- 内置naiveUI
+  [Live Demo](https:/virtuoso.vercel.app/) | [Github](https://github.com/chen-see/ench-admin)
+</div>
 
-## 安装使用
 
-- 环境配置
-  
-  **本地环境需要安装 pnpm 7.x 、Node.js 14.18+ 和 Git**
+## Features
+- Support ts、tsx
+- Simple-git-hooks + lint-staged + eslint + stylelint
+- Vue-router
+- Fully functional axios
+- Unocss
+- NaiveUI
 
-- 克隆代码
-
-```bash
-git clone https://github.com/chen-see/ench-admin.git
-```
-
-- 安装依赖
-
-```bash
-pnpm i
-```
-
-- 运行
+## Usage
+### Development
 
 ```bash
 pnpm dev
 ```
-
-- 打包
+### Build
 
 ```bash
 pnpm build
 ```
-
-## 素材来源
-
-[iconfont-阿里巴巴矢量图标库](https://www.iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.d9df05512&cid=39973)
