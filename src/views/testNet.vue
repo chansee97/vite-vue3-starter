@@ -53,5 +53,3 @@ const patch = () => {
   });
 };
 </script>
-
-<style scoped></style>

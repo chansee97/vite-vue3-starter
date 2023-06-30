@@ -25,5 +25,5 @@ stats.html
 *.sln
 *.sw?
 
-components.d.ts
-auto-imports.d.ts
+/src/types/components.d.ts
+/src/types/auto-imports.d.ts

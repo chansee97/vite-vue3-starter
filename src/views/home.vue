@@ -8,7 +8,9 @@
 </template>
 
 <script setup lang="ts">
+
 const num = ref(0)
+
 function add() {
   num.value++
 }
