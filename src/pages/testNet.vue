@@ -47,7 +47,7 @@ const patch = () => {
   </div>
   <div class="text-center cursor-pointer">
     <div class="my-2em c-emerald-500 hover:underline">
-      <router-link to="/home">
+      <router-link to="/">
         ⬅ Back Home
       </router-link>
     </div>

@@ -14,3 +14,9 @@ interface ImportMetaEnv {
   /** 后端服务的环境类型 */
   readonly MODE?: ServiceEnvType
 }
+
+declare module '*.vue' {
+  import { DefineComponent } from 'vue';
+  const component: DefineComponent;
+  export default component;
+}

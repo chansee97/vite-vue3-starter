@@ -1,16 +1,20 @@
 import type { App } from 'vue'
 import {
+  createMemoryHistory,
   createRouter,
-  createWebHashHistory,
-} from 'vue-router'
-import { routes } from './route'
+  createWebHistory,
+} from 'vue-router/auto'
+
+import { setupLayouts } from 'virtual:generated-layouts'
 
 const { VITE_BASE_URL } = import.meta.env
 
 function setupRouterGuard() {
   const router = createRouter({
-    history: createWebHashHistory(VITE_BASE_URL),
-    routes,
+    history: import.meta.env.SSR ? createMemoryHistory(VITE_BASE_URL) : createWebHistory(VITE_BASE_URL),
+    extendRoutes: (routes) => {
+      return setupLayouts(routes)
+    },
   })
 
   router.beforeEach((_to, _from, next) => {

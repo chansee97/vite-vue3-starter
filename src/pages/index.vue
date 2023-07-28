@@ -22,8 +22,17 @@ function add() {
       account:{{ num }}
     </n-button>
 
-    <router-link to="/testNet" class="c-emerald-500 hover:underline">
-      to test axios
-    </router-link>
+    <n-space>
+      <router-link to="/testNet">
+        <n-button type="info">
+          To test axios
+        </n-button>
+      </router-link>
+      <router-link to="/hi">
+        <n-button type="info">
+          To other layout
+        </n-button>
+      </router-link>
+    </n-space>
   </div>
 </template>

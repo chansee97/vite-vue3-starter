@@ -4,6 +4,10 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import Components from 'unplugin-vue-components/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import AutoImport from 'unplugin-auto-import/vite'
+import Layouts from 'vite-plugin-vue-layouts'
+import VueRouter from 'unplugin-vue-router/vite'
+
+// import { VueRouterAutoImports } from 'unplugin-vue-router'
 
 export function setVitePlugins() {
   const plugins = [
@@ -19,6 +23,8 @@ export function setVitePlugins() {
       dts: 'src/types/components.d.ts',
       resolvers: [NaiveUiResolver()],
     }),
+    Layouts(),
+    VueRouter({ extensions: ['.vue'], dts: 'src/types/typed-router.d.ts' }),
   ]
   return plugins
 }

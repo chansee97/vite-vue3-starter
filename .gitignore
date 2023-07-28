@@ -25,6 +25,7 @@ stats.html
 *.sln
 *.sw?
 
-/src/types/components.d.ts
-/src/types/auto-imports.d.ts
+components.d.ts
+auto-imports.d.ts
+typed-router.d.ts
 pnpm-lock.yaml
