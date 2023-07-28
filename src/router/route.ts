@@ -23,7 +23,7 @@ export const routes: RouteRecordRaw[] = [
   {
     path: '/:pathMatch(.*)*',
     name: '404',
-    component: () => import('@/views/_inner/404.vue'),
+    component: () => import('@/layouts/404.vue'),
     meta: {
       title: '错误404',
     },
