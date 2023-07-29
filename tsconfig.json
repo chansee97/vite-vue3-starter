@@ -17,7 +17,7 @@
       "~/*": ["./*"],
       "@/*": ["./src/*"]
     },
-    "types": ["vite/client", "naive-ui/volar", "vite-plugin-vue-layouts/client"]
+    "types": ["vite/client", "naive-ui/volar", "vite-plugin-vue-layouts/client", "vite-plugin-pwa/client"]
   },
   "exclude": ["node_modules", "dist"]
 }

@@ -14,14 +14,14 @@
 
 <div align='center' style="margin:2em 0;">
 
-  [Live Demo](https:/virtuoso.vercel.app/) | [Github](https://github.com/chen-see/ench-admin)
+  [Live Demo](https:/virtuoso.vercel.app/) | [Github](https://github.com/chansee97/virtuoso)
 </div>
 
 
 ## Features
 - Support ts、tsx
 - Simple-git-hooks + lint-staged + eslint + stylelint
-- Vue-router
+- File based routing and layouts
 - Fully functional axios
 - Unocss
 - NaiveUI

@@ -6,8 +6,7 @@ import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import AutoImport from 'unplugin-auto-import/vite'
 import Layouts from 'vite-plugin-vue-layouts'
 import VueRouter from 'unplugin-vue-router/vite'
-
-// import { VueRouterAutoImports } from 'unplugin-vue-router'
+import { VitePWA } from 'vite-plugin-pwa'
 
 export function setVitePlugins() {
   const plugins = [
@@ -25,6 +24,9 @@ export function setVitePlugins() {
     }),
     Layouts(),
     VueRouter({ extensions: ['.vue'], dts: 'src/types/typed-router.d.ts' }),
+    VitePWA(
+
+    ),
   ]
   return plugins
 }
