@@ -18,7 +18,7 @@ function add() {
     <span>Template baseed on Vue3, Vite4, Unocss - <a
       href="https://github.com/chansee97/virtuoso"
       class="c-emerald-500 hover:underline"
-    >Github Repo</a></span>
+    ><div class="i-icon-park-outline-github-one" />Github Repo</a></span>
 
     <n-button type="primary" @click="add">
       account:{{ count }}
@@ -26,13 +26,13 @@ function add() {
 
     <n-space>
       <router-link to="/testNet">
-        <n-button type="info">
-          To test axios
+        <n-button type="info" title="Axios">
+          <span class="i-icon-park-outline-network-tree" /> Axios
         </n-button>
       </router-link>
       <router-link to="/hi">
         <n-button type="info">
-          To other layout
+          <span class="i-icon-park-outline-layout-one" /> other layout
         </n-button>
       </router-link>
     </n-space>

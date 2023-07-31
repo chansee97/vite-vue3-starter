@@ -39,6 +39,7 @@
   "devDependencies": {
     "@chansee97/eslint-config-vue": "^0.3.5",
     "@chansee97/stylelint-config": "^0.3.5",
+    "@iconify-json/icon-park-outline": "^1.1.11",
     "@types/node": "^20.4.5",
     "@types/nprogress": "^0.2.0",
     "@vitejs/plugin-vue": "^4.2.3",

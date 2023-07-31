@@ -28,10 +28,11 @@
 - Simple-git-hooks + lint-staged + eslint + stylelint
 - File based routing and layouts
 - Functionally wrapped [Axios](https://github.com/axios/axios)
-- [Unocss](https://unocss.dev/) - Customizable · Powerful · Fast · Joyful
+- [Unocss](https://unocss.dev/) - the instant on-demand atomic CSS engine
 - [NaiveUI](https://www.naiveui.com/zh-CN/light) - A Vue 3 Component Library
-- PWA
+- PWA Support
 - State Management via [Pinia](https://pinia.vuejs.org/)
+- [Use icons from any icon sets with classes](https://unocss.dev/presets/icons)
 
 ## Usage
 ### GitHub Template
