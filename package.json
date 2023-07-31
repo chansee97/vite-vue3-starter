@@ -18,13 +18,14 @@
     "vitesse"
   ],
   "scripts": {
-    "dev": "vite --mode dev ",
+    "dev": "vite --mode dev --port 5200 --open",
     "dev:test": "vite --mode test ",
     "dev:prod": "vite --mode prod ",
     "build": "vite build",
     "preview": "vite preview",
     "lint:fix": "eslint . --fix",
-    "stylelint:fix": "npx stylelint *.{css,scss,vue,less,html} --fix"
+    "stylelint:fix": "npx stylelint *.{css,scss,vue,less,html} --fix",
+    "postinstall": "npx simple-git-hooks"
   },
   "dependencies": {
     "@unocss/reset": "^0.53.4",

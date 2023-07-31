@@ -26,14 +26,9 @@ export default defineConfig(({ command, mode }: ConfigEnv) => {
     },
     server: {
       host: '0.0.0.0',
-      port: 5200,
-    },
-    preview: {
-      port: 5211,
     },
     build: {
       reportCompressedSize: false, // 启用/禁用 gzip 压缩大小报告
-      sourcemap: false, // 构建后是否生成 source map 文件
     },
   }
 })
