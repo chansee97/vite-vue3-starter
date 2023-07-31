@@ -4,8 +4,11 @@
 
 <template>
   <div class="h-full flex flex-col gap-2em justify-center items-center">
-    <h1 class="text-5xl font-bold">
-      404 | <span class="text-gray-600">Not Found</span>
+    <span class="text-7xl">
+      😵
+    </span>
+    <h1 class="text-4xl text-gray-500 op-60">
+      404 | <span>Not Found</span>
     </h1>
     <router-link to="/">
       <n-button type="primary">

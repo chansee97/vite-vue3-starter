@@ -3,8 +3,8 @@
     <div class="flex-1">
       <router-view />
     </div>
-    <div mx-auto mt-5 text-center text-sm opacity-50>
-      [Home Layout]
+    <div class="bg-teal-100 text-teal-900 text-center py-1ch">
+      [ Home Layout ]
     </div>
   </main>
 </template>

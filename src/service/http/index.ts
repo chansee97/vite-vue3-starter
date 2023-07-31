@@ -1,5 +1,5 @@
 import { createRequest } from './request'
 
-const onlineMockURL = 'https://mock.mengxuegu.com/mock/61e4df7c17249f68847fc191/api'
+const onlineMockURL = 'https://www.fastmock.site/mock/6034dbc0a4ac2d7410f2924dd22630ba/virtuoso'
 
-export const request = createRequest({ baseURL: onlineMockURL })
+export const mockRequest = createRequest({ baseURL: onlineMockURL })

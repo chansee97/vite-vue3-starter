@@ -7,6 +7,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Layouts from 'vite-plugin-vue-layouts'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VitePWA } from 'vite-plugin-pwa'
+import { VueRouterAutoImports } from 'unplugin-vue-router'
 
 export function setVitePlugins() {
   const plugins = [
@@ -14,7 +15,7 @@ export function setVitePlugins() {
     vueJsx(),
     Unocss(),
     AutoImport({
-      imports: ['vue', 'vue-router', 'pinia', '@vueuse/core'],
+      imports: ['vue', VueRouterAutoImports, 'pinia', '@vueuse/core'],
       include: [/\.[tj]sx?$/, /\.vue$/, /\.vue\?vue/, /\.md$/],
       dts: 'src/types/auto-imports.d.ts',
     }),
