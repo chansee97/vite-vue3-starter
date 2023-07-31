@@ -8,36 +8,36 @@
 
 
 <div align='center' >
-  A quick start template for a vue project, based on Vite, Unocss
+  一个基于Vite, Unocss的Vue快速启动模板
 </div>
 
 
-<div align='center'>
+<div align='center' style="margin:2em 0;">
 
   [Live Demo](https:/virtuoso.vercel.app/)
 </div>
 
-<div align='center'>
+<div align='center' style="margin:2em 0;">
 
-  <b>English</b> | [简体中文](https://github.com/chansee97/virtuoso/blob/main/README.zh-CN.md)
+  [English](https://github.com/chansee97/virtuoso/blob/main/README.md) | <b>简体中文</b>
 </div>
 
 
-## Features
-- Support ts、tsx
+## 特点
+- 支持TS、TSX格式
 - Simple-git-hooks + lint-staged + eslint + stylelint
-- File based routing and layouts
-- Functionally wrapped [Axios](https://github.com/axios/axios)
+- 基于文件的路由和布局
+- 功能封装完好 [Axios](https://github.com/axios/axios)
 - [Unocss](https://unocss.dev/) - Customizable · Powerful · Fast · Joyful
 - [NaiveUI](https://www.naiveui.com/zh-CN/light) - A Vue 3 Component Library
 - PWA
-- State Management via [Pinia](https://pinia.vuejs.org/)
+- 使用 [Pinia](https://pinia.vuejs.org/) 进行状态管理
 
-## Usage
-### GitHub Template
-[Create a repo from this template on GitHub.](https://github.com/chansee97/virtuoso/generate)
+## 用法
+### GitHub 模板
+[根据此模板在 GitHub 上创建一个 repo](https://github.com/chansee97/virtuoso/generate)
 
-### Development
+### 开发
 
 ```bash
 # clone
