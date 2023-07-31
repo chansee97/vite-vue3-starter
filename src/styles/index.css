@@ -4,6 +4,12 @@ body,
   height: 100%;
 }
 
+html.dark {
+  background: #121212;
+  color-scheme: dark;
+}
+
+
 #nprogress {
   pointer-events: none;
 }

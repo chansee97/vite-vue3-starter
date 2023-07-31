@@ -1,5 +1,9 @@
 <script setup lang="ts">
+import { isDark } from '@/composables/dark'
 
+function toggleDark() {
+  isDark.value = !isDark.value
+}
 </script>
 
 <template>
@@ -15,7 +19,11 @@
       </n-button>
     </router-link>
     <a
-      href="https://github.com/chansee97/virtuoso"
+      href="https://github.com/chansee97/virtuoso" target="_blank"
     > <n-button title="Github Repo"><div class="i-icon-park-outline-github" /></n-button></a>
+
+    <n-button title="Toggle" @click="toggleDark">
+      <span :class="isDark ? 'i-icon-park-outline-sun' : 'i-icon-park-outline-moon' " />
+    </n-button>
   </div>
 </template>

@@ -56,7 +56,11 @@ const put = () => {
         put
       </n-button>
     </n-space>
-    <pre class="bg-zinc-200 w-30em b-rd-3 p-1em min-h-16em">{{ msg }}</pre>
+    <n-alert type="info">
+      Web request to open the console to view
+    </n-alert>
+
+    <pre class="bg-zinc-200:40 w-30em b-rd-3 p-1em min-h-16em">{{ msg }}</pre>
 
     <v-footer />
   </div>

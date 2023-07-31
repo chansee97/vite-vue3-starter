@@ -3,8 +3,8 @@
     <div class="flex-1">
       <router-view />
     </div>
-    <div class="bg-teal-100 text-teal-900 text-center py-1ch">
+    <v-layout-footer>
       [ Home Layout ]
-    </div>
+    </v-layout-footer>
   </main>
 </template>
