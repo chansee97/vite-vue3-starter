@@ -8,7 +8,6 @@ import '@/styles/index.css'
 async function setupApp() {
   // 创建vue实例
   const app = createApp(AppVue)
-  console.warn('🚀 ~ file: main.ts:11 ~ setupApp ~ app:', app)
   Object.values(
     import.meta.glob<{ install: (app: App) => void }>('./modules/*.ts', {
       eager: true,

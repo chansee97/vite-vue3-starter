@@ -1,4 +1,5 @@
 import type { App } from 'vue'
+import NProgress from 'nprogress'
 import {
   createMemoryHistory,
   createRouter,
@@ -17,8 +18,12 @@ function setupRouterGuard() {
     },
   })
 
-  router.beforeEach((_to, _from, next) => {
-    next()
+  router.beforeEach((to, from) => {
+    if (to.path !== from.path)
+      NProgress.start()
+  })
+  router.afterEach(() => {
+    NProgress.done()
   })
   return router
 }
