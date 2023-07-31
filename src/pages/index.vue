@@ -11,7 +11,8 @@ function add() {
   message.success(`total : ${count.value}`)
 }
 
-function ToHiPage() {
+const router = useRouter()
+function go() {
   router.push(`/hi/${encodeURIComponent(name.value)}`)
 }
 </script>
@@ -24,7 +25,7 @@ function ToHiPage() {
 
     <n-space>
       <n-input v-model:value="name" type="text" placeholder="Enter your name" />
-      <n-button type="primary" :disabled="!name" @click="ToHiPage">
+      <n-button type="primary" :disabled="!name" @click="go">
         Go
       </n-button>
       <n-button @click="add">

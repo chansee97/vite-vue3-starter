@@ -1,5 +1,7 @@
 <script setup lang="ts">
 const { count } = storeToRefs(useStore())
+
+const route = useRoute()
 </script>
 
 <template>
