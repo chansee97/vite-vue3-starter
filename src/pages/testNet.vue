@@ -60,7 +60,7 @@ const put = () => {
       Web request to open the console to view
     </n-alert>
 
-    <pre class="bg-zinc-200:40 w-30em b-rd-3 p-1em min-h-16em">{{ msg }}</pre>
+    <pre class="bg-zinc-200:40 min-w-32em b-rd-3 p-1em max-h-16em overflow-y-auto">{{ msg }}</pre>
 
     <v-footer />
   </div>

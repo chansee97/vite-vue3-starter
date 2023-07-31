@@ -21,7 +21,7 @@
     "dev": "vite --mode dev --port 5200 --open",
     "dev:test": "vite --mode test ",
     "dev:prod": "vite --mode prod ",
-    "build": "vite build",
+    "build": "vite build --mode prod",
     "preview": "vite preview",
     "lint:fix": "eslint . --fix",
     "stylelint:fix": "npx stylelint *.{css,scss,vue,less,html} --fix",

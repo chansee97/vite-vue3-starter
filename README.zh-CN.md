@@ -33,6 +33,7 @@
 - 支持PWA
 - 使用 [Pinia](https://pinia.vuejs.org/) 进行状态管理
 - [通过设置class使用任何图标集的图标](https://unocss.dev/presets/icons)
+- 暗黑模式适配
 
 ## 用法
 ### GitHub 模板

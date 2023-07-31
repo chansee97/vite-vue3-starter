@@ -33,6 +33,7 @@
 - PWA Support
 - State Management via [Pinia](https://pinia.vuejs.org/)
 - [Use icons from any icon sets with classes](https://unocss.dev/presets/icons)
+- Dark mode adaptation
 
 ## Usage
 ### GitHub Template
