@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { GlobalThemeOverrides } from 'naive-ui'
 import { darkTheme, dateZhCN, zhCN } from 'naive-ui'
-import { isDark } from '@/composables/dark'
 
 const locale = zhCN
 const dateLocale = dateZhCN

@@ -13,16 +13,29 @@ export function setVitePlugins() {
   const plugins = [
     vue(),
     vueJsx(),
+
+    // https://github.com/antfu/unocss
     Unocss(),
+
+    // https://github.com/antfu/unplugin-auto-import
     AutoImport({
       imports: ['vue', VueRouterAutoImports, 'pinia', '@vueuse/core'],
       include: [/\.[tj]sx?$/, /\.vue$/, /\.vue\?vue/, /\.md$/],
       dts: 'src/types/auto-imports.d.ts',
+      dirs: [
+        'src/composables',
+        'src/stores',
+      ],
+      vueTemplate: true,
     }),
+
+    // https://github.com/antfu/unplugin-vue-components
     Components({
       dts: 'src/types/components.d.ts',
       resolvers: [NaiveUiResolver()],
     }),
+
+    // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
     Layouts(),
     VueRouter({ extensions: ['.vue'], dts: 'src/types/typed-router.d.ts' }),
 

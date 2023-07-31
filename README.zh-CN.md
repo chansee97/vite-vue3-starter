@@ -14,12 +14,12 @@
 
 <div align='center' style="margin:2em 0;">
 
-  [Live Demo](https:/virtuoso.vercel.app/)
+  [在线演示](https:/virtuoso.vercel.app/)
 </div>
 
 <div align='center' style="margin:2em 0;">
 
-  [English](https://github.com/chansee97/virtuoso/blob/main/README.md) | <b>简体中文</b>
+  [英语](https://github.com/chansee97/virtuoso/blob/main/README.md) | <b>简体中文</b>
 </div>
 
 
@@ -35,7 +35,7 @@
 - [通过设置class使用任何图标集的图标](https://unocss.dev/presets/icons)
 - 暗黑模式适配
 - [组件自动引入](./src/components)
-- [API自动引入](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
+- [API自动引入](https://github.com/antfu/unplugin-auto-import) - 直接使用CompositionAPI等
 
 ## 用法
 ### GitHub 模板

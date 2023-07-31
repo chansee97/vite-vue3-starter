@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { isDark } from '@/composables/dark'
-
 function toggleDark() {
   isDark.value = !isDark.value
 }

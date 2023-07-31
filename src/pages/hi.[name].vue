@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useStore } from '@/store'
-
 const { count } = storeToRefs(useStore())
 
 const route = useRoute()
