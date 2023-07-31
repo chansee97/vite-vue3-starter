@@ -1,6 +1,7 @@
 import axios from 'axios'
 import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios'
 import { useMessage } from 'naive-ui'
+import { handleHttpError } from './handleError'
 
 const message = useMessage()
 
@@ -56,47 +57,10 @@ export default class createAxiosInstance {
             return Promise.reject(new Error(`Error:${this.backendConfig.dataKey}`))
         }
       },
-      (err: any) => {
+      (err) => {
         // 这里用来处理http常见错误，进行全局提示
-        let tip = ''
-        switch (err.response.status) {
-          case 400:
-            tip = '请求错误(400)'
-            break
-          case 401:
-            tip = '未授权，请重新登录(401)'
-            // 这里可以做清空storage并跳转到登录页的操作
-            break
-          case 403:
-            tip = '拒绝访问(403)'
-            break
-          case 404:
-            tip = '请求出错(404)'
-            break
-          case 408:
-            tip = '请求超时(408)'
-            break
-          case 500:
-            tip = '服务器错误(500)'
-            break
-          case 501:
-            tip = '服务未实现(501)'
-            break
-          case 502:
-            tip = '网络错误(502)'
-            break
-          case 503:
-            tip = '服务不可用(503)'
-            break
-          case 504:
-            tip = '网络超时(504)'
-            break
-          case 505:
-            tip = 'HTTP版本不受支持(505)'
-            break
-          default:
-            tip = `连接出错(${err.response.status})!`
-        }
+        const tip = handleHttpError(err.response.status)
+
         message.error(tip)
         // 这里是AxiosError类型，所以一般我们只reject我们需要的响应即可
         return Promise.reject(err.response)

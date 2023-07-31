@@ -25,6 +25,7 @@ export function setVitePlugins() {
       dirs: [
         'src/composables',
         'src/stores',
+        'src/service/api',
       ],
       vueTemplate: true,
     }),

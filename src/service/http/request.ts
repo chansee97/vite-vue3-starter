@@ -19,7 +19,7 @@ export function createRequest(axiosConfig: AxiosRequestConfig, backendConfig?: S
    * @param {AxiosRequestConfig} config - 请求配置
    * @return {*}
    */
-  type RequestMethod = 'get' | 'post' | 'put' | 'delete' | 'patch'
+  type RequestMethod = 'get' | 'post' | 'put' | 'delete'
   const request = async (url: string, method: RequestMethod = 'get', data: any, config?: AxiosRequestConfig) => {
     return instance(url, { method, data, ...config })
   }
@@ -29,7 +29,7 @@ export function createRequest(axiosConfig: AxiosRequestConfig, backendConfig?: S
    * @param {string} url - 请求地址
    * @return {*}
    */
-  const get = async (url: string, config?: AxiosRequestConfig) => {
+  const get = (url: string, config?: AxiosRequestConfig) => {
     return instance.get(url, config)
   }
 
@@ -39,8 +39,18 @@ export function createRequest(axiosConfig: AxiosRequestConfig, backendConfig?: S
    * @param data - 请求的body的data
    * @param config - axios配置
    */
-  const post = async (url: string, data?: any, config?: AxiosRequestConfig) => {
+  const post = (url: string, data?: any, config?: AxiosRequestConfig) => {
     return instance.post(url, data, config)
+  }
+
+  /**
+   * post请求-form格式提交
+   * @param url - 请求地址
+   * @param data - 请求的body的data
+   * @param config - axios配置
+   */
+  const postForm = (url: string, data?: any, config?: AxiosRequestConfig) => {
+    return instance.post(url, data, { ...config, headers: { 'content-type': 'application/x-www-form-urlencoded' } })
   }
 
   /**
@@ -48,7 +58,7 @@ export function createRequest(axiosConfig: AxiosRequestConfig, backendConfig?: S
    * @param url - 请求地址
    * @param config - axios配置
    */
-  const Delete = async (url: string, config?: AxiosRequestConfig) => {
+  const Delete = (url: string, config?: AxiosRequestConfig) => {
     return instance.delete(url, config)
   }
 
@@ -58,26 +68,16 @@ export function createRequest(axiosConfig: AxiosRequestConfig, backendConfig?: S
    * @param data - 请求的body的data
    * @param config - axios配置
    */
-  const put = async (url: string, data?: any, config?: AxiosRequestConfig) => {
+  const put = (url: string, data?: any, config?: AxiosRequestConfig) => {
     return instance.put(url, data, config)
-  }
-
-  /**
-   * patch请求
-   * @param url - 请求地址
-   * @param data - 请求的body的data
-   * @param config - axios配置
-   */
-  const patch = async (url: string, data?: any, config?: AxiosRequestConfig) => {
-    return instance.patch(url, data, config)
   }
 
   return {
     request,
     get,
     post,
+    postForm,
     Delete,
     put,
-    patch,
   }
 }

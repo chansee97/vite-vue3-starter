@@ -1,33 +1,43 @@
 <script setup lang="ts">
-import { fetachDelete, fetachGet, fetachPost, fetachPut } from '@/service/api'
-
 const msg = ref<any>('No Data Yet')
 const pinterEnv = () => {
   msg.value = import.meta.env
 }
 const get = () => {
-  fetachGet().then((res) => {
+  fetchGet().then((res) => {
     msg.value = res
   })
 }
 const _delete = () => {
-  fetachDelete().then((res) => {
+  fetchDelete().then((res) => {
     msg.value = res
   })
 }
 const post = () => {
   const params = {
     data: '2022-2-2',
+    type: 'post',
   }
-  fetachPost(params).then((res) => {
+  fetchPost(params).then((res) => {
     msg.value = res
   })
 }
+
+const postForm = () => {
+  const params = {
+    data: '2022-2-2',
+    type: 'postForm',
+  }
+  fetchPostForm(params).then((res) => {
+    msg.value = res
+  })
+}
+
 const put = () => {
   const params = {
     data: '2022-2-2',
   }
-  fetachPut(params).then((res) => {
+  fetchPut(params).then((res) => {
     msg.value = res
   })
 }
@@ -48,6 +58,9 @@ const put = () => {
       </n-button>
       <n-button @click="post">
         post
+      </n-button>
+      <n-button @click="postForm">
+        postForm
       </n-button>
       <n-button @click="_delete">
         delete

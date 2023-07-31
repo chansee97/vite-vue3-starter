@@ -1,7 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
   <div class="h-full flex flex-col gap-2em justify-center items-center">
     <span class="text-7xl">

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useMessage } from 'naive-ui'
 
-const router = useRouter()
 const message = useMessage()
 const { count } = storeToRefs(useStore())
 
