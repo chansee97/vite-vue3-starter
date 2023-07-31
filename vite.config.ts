@@ -26,7 +26,7 @@ export default defineConfig(({ command, mode }: ConfigEnv) => {
     },
     server: {
       host: '0.0.0.0',
-      port: 5173,
+      port: 5200,
     },
     preview: {
       port: 5211,

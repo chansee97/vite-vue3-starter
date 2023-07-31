@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import { useMessage } from 'naive-ui'
+import { useStore } from '@/store'
 
 const message = useMessage()
-const num = ref(0)
+const { count } = storeToRefs(useStore())
 
 function add() {
-  num.value++
-  message.success(`total : ${num.value}`)
+  count.value++
+  message.success(`total : ${count.value}`)
 }
 </script>
 
@@ -20,7 +21,7 @@ function add() {
     >Github Repo</a></span>
 
     <n-button type="primary" @click="add">
-      account:{{ num }}
+      account:{{ count }}
     </n-button>
 
     <n-space>

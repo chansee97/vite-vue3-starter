@@ -24,7 +24,7 @@ function setupRouterGuard() {
 }
 
 // 安装vue路由
-export async function setupRouter(app: App) {
+export async function install(app: App) {
   // 添加路由守卫
   const router = setupRouterGuard()
   app.use(router)

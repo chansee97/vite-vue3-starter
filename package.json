@@ -1,7 +1,22 @@
 {
   "name": "virtuoso",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.1.0",
+  "author": "Rock Chen",
+  "license": "MIT",
+  "homepage": "https://github.com/chansee97/virtuoso",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chansee97/virtuoso.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chansee97/virtuoso/issues"
+  },
+  "keywords": [
+    "vitailse",
+    "tailwindcss",
+    "vite",
+    "vitesse"
+  ],
   "scripts": {
     "dev": "vite --mode dev ",
     "dev:test": "vite --mode test ",
@@ -15,6 +30,7 @@
     "@unocss/reset": "^0.53.4",
     "@vueuse/core": "^10.2.1",
     "axios": "^1.4.0",
+    "pinia": "^2.1.6",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2"
   },
