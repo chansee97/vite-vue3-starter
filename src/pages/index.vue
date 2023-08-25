@@ -21,7 +21,7 @@ function go() {
   <div class="flex-center h-full flex-col gap-2em">
     <img src="/favicon.svg" class="w-16em">
     <span class="text-3xl">Welcome to Virtuoso</span>
-    <span>Template baseed on Vue3, Vite4, Unocss</span>
+    <span>Template baseed on Vue3, Vite4, Naive-UI, Unocss</span>
 
     <n-space>
       <n-input v-model:value="name" type="text" placeholder="Enter your name" />
