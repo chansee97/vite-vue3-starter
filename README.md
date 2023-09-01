@@ -13,7 +13,7 @@
 
 
 <div align='center'>
-  <a href="https:/virtuoso.vercel.app/">Live Demo</a>
+  <a href="https://virtuoso.vercel.app">Live Demo</a>
 </div>
 
 <div align='center'>
