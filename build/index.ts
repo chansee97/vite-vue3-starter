@@ -38,7 +38,11 @@ export function setVitePlugins() {
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
     Layouts(),
-    VueRouter({ extensions: ['.vue'], dts: 'src/types/typed-router.d.ts' }),
+    VueRouter({
+      extensions: ['.vue'],
+      exclude: ['**/components/*.vue'],
+      dts: 'src/types/typed-router.d.ts',
+    }),
 
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
