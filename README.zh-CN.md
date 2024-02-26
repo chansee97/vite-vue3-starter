@@ -6,11 +6,9 @@
   <h1>Virtuoso</h1>
 </div>
 
-
 <div align='center' >
   一个基于Vite, Unocss的Vue快速启动模板
 </div>
-
 
 <div align='center' style="margin:2em 0;">
   <a href="https://virtuoso.vercel.app">在线演示</a>
@@ -20,7 +18,6 @@
 
   [英语](https://github.com/chansee97/virtuoso/blob/main/README.md) | <b>简体中文</b>
 </div>
-
 
 ## 特点
 - 支持TS、TSX格式

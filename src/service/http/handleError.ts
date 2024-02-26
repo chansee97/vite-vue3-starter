@@ -1,4 +1,4 @@
-interface httpErrorHandle { text: string; handle?: () => void }
+interface httpErrorHandle { text: string, handle?: () => void }
 const httpError: Record<number, httpErrorHandle> = {
   400: {
     text: '请求错误(400)',

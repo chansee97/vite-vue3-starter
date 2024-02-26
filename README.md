@@ -6,11 +6,9 @@
   <h1>Virtuoso</h1>
 </div>
 
-
 <div align='center' >
   A quick start template for a vue project, based on Vite, Unocss
 </div>
-
 
 <div align='center'>
   <a href="https://virtuoso.vercel.app">Live Demo</a>
@@ -20,7 +18,6 @@
 
   <b>English</b> | [简体中文](https://github.com/chansee97/virtuoso/blob/main/README.zh-CN.md)
 </div>
-
 
 ## Features
 - Support TypeScript, TSX

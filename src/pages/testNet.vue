@@ -1,19 +1,19 @@
 <script setup lang="ts">
 const msg = ref<any>('No Data Yet')
-const pinterEnv = () => {
+function pinterEnv() {
   msg.value = import.meta.env
 }
-const get = () => {
+function get() {
   fetchGet().then((res) => {
     msg.value = res
   })
 }
-const _delete = () => {
+function _delete() {
   fetchDelete().then((res) => {
     msg.value = res
   })
 }
-const post = () => {
+function post() {
   const params = {
     data: '2022-2-2',
     type: 'post',
@@ -23,7 +23,7 @@ const post = () => {
   })
 }
 
-const postForm = () => {
+function postForm() {
   const params = {
     data: '2022-2-2',
     type: 'postForm',
@@ -33,7 +33,7 @@ const postForm = () => {
   })
 }
 
-const put = () => {
+function put() {
   const params = {
     data: '2022-2-2',
   }

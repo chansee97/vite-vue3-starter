@@ -12,7 +12,8 @@ export default defineConfig({
         'display': 'inline-block',
         'vertical-align': 'middle',
       },
-    })],
+    }),
+  ],
   shortcuts: {
     'wh-full': 'w-full h-full',
     'flex-center': 'flex justify-center items-center',
