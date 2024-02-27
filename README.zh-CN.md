@@ -32,6 +32,7 @@
 - 暗黑模式适配
 - [组件自动引入](./src/components)
 - [API自动引入](https://github.com/antfu/unplugin-auto-import) - 直接使用Composition和其他文件夹的API
+- e2e测试 - 使用[cypress](https://www.cypress.io/)进行端到端测试
 
 ## 用法
 ### GitHub 模板
