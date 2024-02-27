@@ -24,7 +24,7 @@ function go() {
     <span>Template baseed on Vue3, Vite4, Naive-UI, Unocss</span>
 
     <n-space>
-      <n-input v-model:value="name" type="text" placeholder="Enter your name" />
+      <n-input v-model:value="name" test-id="test-input" type="text" placeholder="Enter your name" @keydown.enter="go" />
       <n-button type="primary" :disabled="!name" @click="go">
         Go
       </n-button>

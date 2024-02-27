@@ -4,7 +4,7 @@
       <router-view />
     </div>
     <v-layout-footer>
-      [ Home Layout ]
+      [Home Layout]
     </v-layout-footer>
   </main>
 </template>
