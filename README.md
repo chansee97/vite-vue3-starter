@@ -32,7 +32,7 @@
 - Dark mode adaptation
 - [Components auto importing](./src/components)
 - [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
-- e2e testing - end-to-end testing with [cypress] (https://www.cypress.io/)
+- e2e testing - end-to-end testing with [cypress](https://www.cypress.io/)
 
 ## Usage
 ### GitHub Template
