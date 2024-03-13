@@ -16,9 +16,9 @@ function toggleDark() {
         <span class="i-icon-park-outline-network-tree" />
       </n-button>
     </router-link>
-    <a
-      href="https://github.com/chansee97/virtuoso" target="_blank"
-    > <n-button title="Github Repo"><div class="i-icon-park-outline-github" /></n-button></a>
+    <a href="https://github.com/chansee97/vite-vue3-starter" target="_blank"> <n-button title="Github Repo">
+      <div class="i-icon-park-outline-github" />
+    </n-button></a>
 
     <n-button title="Toggle" @click="toggleDark">
       <span :class="isDark ? 'i-icon-park-outline-sun' : 'i-icon-park-outline-moon' " />

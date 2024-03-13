@@ -3,11 +3,12 @@
 </div>
 
 <div align='center'>
-  <h1>Virtuoso</h1>
+  <h1>vite-vue3-starter</h1>
+  <h4>Virtuoso</h4>
 </div>
 
 <div align='center' >
-  一个基于Vite, Unocss的Vue快速启动模板
+  一个基于Vite, Unocss的Vue3快速启动模板
 </div>
 
 <div align='center' style="margin:2em 0;">
@@ -16,7 +17,7 @@
 
 <div align='center' style="margin:2em 0;">
 
-  [英语](https://github.com/chansee97/virtuoso/blob/main/README.md) | <b>简体中文</b>
+  [英语](https://github.com/chansee97/vite-vue3-starter/blob/main/README.md) | <b>简体中文</b>
 </div>
 
 ## 特点
@@ -32,17 +33,16 @@
 - 暗黑模式适配
 - [组件自动引入](./src/components)
 - [API自动引入](https://github.com/antfu/unplugin-auto-import) - 直接使用Composition和其他文件夹的API
-- e2e测试 - 使用[cypress](https://www.cypress.io/)进行端到端测试
 
 ## 用法
 ### GitHub 模板
-[根据此模板在 GitHub 上创建一个 repo](https://github.com/chansee97/virtuoso/generate)
+[根据此模板在 GitHub 上创建一个 repo](https://github.com/chansee97/vite-vue3-starter/generate)
 
 ### 开发
 
 ```bash
 # clone
-git clone https://github.com/chansee97/virtuoso.git
+git clone https://github.com/chansee97/vite-vue3-starter.git
 # Installation of dependencies
 pnpm i
 # Development visit http://localhost:5200

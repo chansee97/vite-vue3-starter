@@ -3,11 +3,12 @@
 </div>
 
 <div align='center'>
-  <h1>Virtuoso</h1>
+  <h1>vite-vue3-starter</h1>
+  <h4>Virtuoso</h4>
 </div>
 
 <div align='center' >
-  A quick start template for a vue project, based on Vite, Unocss
+  A quick start template for a vue3 project, based on Vite, Unocss
 </div>
 
 <div align='center'>
@@ -16,7 +17,7 @@
 
 <div align='center'>
 
-  <b>English</b> | [简体中文](https://github.com/chansee97/virtuoso/blob/main/README.zh-CN.md)
+  <b>English</b> | [简体中文](https://github.com/chansee97/vite-vue3-starter.vercel.app/blob/main/README.zh-CN.md)
 </div>
 
 ## Features
@@ -32,17 +33,16 @@
 - Dark mode adaptation
 - [Components auto importing](./src/components)
 - [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
-- e2e testing - end-to-end testing with [cypress](https://www.cypress.io/)
 
 ## Usage
 ### GitHub Template
-[Create a repo from this template on GitHub.](https://github.com/chansee97/virtuoso/generate)
+[Create a repo from this template on GitHub.](https://github.com/chansee97/vite-vue3-starter/generate)
 
 ### Development
 
 ```bash
 # clone
-git clone https://github.com/chansee97/virtuoso.git
+git clone https://github.com/chansee97/vite-vue3-starter.vercel.app.git
 # Installation of dependencies
 pnpm i
 # Development visit http://localhost:5200
