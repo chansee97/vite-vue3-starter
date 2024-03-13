@@ -17,7 +17,7 @@
 
 <div align='center' style="margin:2em 0;">
 
-  [英语](https://github.com/chansee97/vite-vue3-starter/blob/main/README.md) | <b>简体中文</b>
+  [英语](./README.md) | <b>简体中文</b>
 </div>
 
 ## 特点

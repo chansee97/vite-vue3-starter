@@ -17,7 +17,7 @@
 
 <div align='center'>
 
-  <b>English</b> | [简体中文](https://github.com/chansee97/vite-vue3-starter.vercel.app/blob/main/README.zh-CN.md)
+  <b>English</b> | [简体中文](./README.zh-CN.md)
 </div>
 
 ## Features
@@ -42,7 +42,7 @@
 
 ```bash
 # clone
-git clone https://github.com/chansee97/vite-vue3-starter.vercel.app.git
+git clone https://github.com/chansee97/vite-vue3-starter.git
 # Installation of dependencies
 pnpm i
 # Development visit http://localhost:5200
