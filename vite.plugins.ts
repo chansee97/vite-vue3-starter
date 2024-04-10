@@ -2,7 +2,6 @@ import Unocss from 'unocss/vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import Components from 'unplugin-vue-components/vite'
-import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import AutoImport from 'unplugin-auto-import/vite'
 import Layouts from 'vite-plugin-vue-layouts'
 import VueRouter from 'unplugin-vue-router/vite'
@@ -33,7 +32,7 @@ export function setVitePlugins() {
     // https://github.com/antfu/unplugin-vue-components
     Components({
       dts: 'src/types/components.d.ts',
-      resolvers: [NaiveUiResolver()],
+      resolvers: [],
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts

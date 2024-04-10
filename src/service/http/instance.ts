@@ -1,9 +1,6 @@
 import axios from 'axios'
 import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios'
-import { useMessage } from 'naive-ui'
 import { handleHttpError } from './handleError'
-
-const message = useMessage()
 
 /**
  * @description: 封装axios请求类
@@ -60,8 +57,8 @@ export default class createAxiosInstance {
       (err) => {
         // 这里用来处理http常见错误，进行全局提示
         const tip = handleHttpError(err.response.status)
+        console.warn('🚀 ~ tip:', tip)
 
-        message.error(tip)
         // 这里是AxiosError类型，所以一般我们只reject我们需要的响应即可
         return Promise.reject(err.response)
       },

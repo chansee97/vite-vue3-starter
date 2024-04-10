@@ -13,9 +13,9 @@ const route = useRoute()
       Your  count:{{ count }}
     </h1>
     <router-link to="/">
-      <n-button title="Back" size="small" type="primary">
+      <button title="Back" size="small">
         Back
-      </n-button>
+      </button>
     </router-link>
 
     <v-footer />

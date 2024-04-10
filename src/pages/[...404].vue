@@ -7,9 +7,9 @@
       404 | <span>Not Found</span>
     </h1>
     <router-link to="/">
-      <n-button type="primary">
+      <button>
         返回首页
-      </n-button>
+      </button>
     </router-link>
   </div>
 </template>

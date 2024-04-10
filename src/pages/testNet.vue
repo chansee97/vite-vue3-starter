@@ -49,29 +49,29 @@ function put() {
       Here is an example of Axios usage
     </div>
 
-    <n-space justify="center">
-      <n-button @click="pinterEnv">
+    <div class="flex gap-sm">
+      <button @click="pinterEnv">
         env
-      </n-button>
-      <n-button @click="get">
+      </button>
+      <button @click="get">
         get
-      </n-button>
-      <n-button @click="post">
+      </button>
+      <button @click="post">
         post
-      </n-button>
-      <n-button @click="postForm">
+      </button>
+      <button @click="postForm">
         postForm
-      </n-button>
-      <n-button @click="_delete">
+      </button>
+      <button @click="_delete">
         delete
-      </n-button>
-      <n-button @click="put">
+      </button>
+      <button @click="put">
         put
-      </n-button>
-    </n-space>
-    <n-alert type="info">
+      </button>
+    </div>
+    <span>
       Web request to open the console to view
-    </n-alert>
+    </span>
 
     <pre class="bg-zinc-200:40 min-w-32em b-rd-3 p-1em max-h-16em overflow-y-auto">{{ msg }}</pre>
 

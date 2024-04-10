@@ -21,12 +21,12 @@
 </div>
 
 ## Features
+
 - Support TypeScript, TSX
 - Simple-git-hooks + lint-staged + eslint + stylelint
 - File based routing and layouts
 - Functionally wrapped [Axios](https://github.com/axios/axios)
 - [Unocss](https://unocss.dev/) - the instant on-demand atomic CSS engine
-- [NaiveUI](https://www.naiveui.com/zh-CN/light) - A Vue 3 Component Library
 - PWA Support
 - State Management via [Pinia](https://pinia.vuejs.org/)
 - [Use icons from any icon sets with classes](https://unocss.dev/presets/icons)
@@ -35,7 +35,9 @@
 - [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
 
 ## Usage
+
 ### GitHub Template
+
 [Create a repo from this template on GitHub.](https://github.com/chansee97/vite-vue3-starter/generate)
 
 ### Development

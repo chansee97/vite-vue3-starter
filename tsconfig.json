@@ -12,7 +12,6 @@
     "resolveJsonModule": true,
     "types": [
       "vite/client",
-      "naive-ui/volar",
       "vite-plugin-vue-layouts/client",
       "vite-plugin-pwa/client"
     ],
