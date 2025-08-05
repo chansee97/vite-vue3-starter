@@ -1,4 +1,5 @@
-import { type App, createApp } from 'vue'
+import type { App } from 'vue'
+import { createApp } from 'vue'
 import AppVue from './App.vue'
 import 'uno.css'
 import '@unocss/reset/tailwind-compat.css'

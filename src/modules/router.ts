@@ -1,30 +1,29 @@
 import type { App } from 'vue'
+import type { RouteLocationNormalized } from 'vue-router'
 import NProgress from 'nprogress'
-import {
-  createMemoryHistory,
-  createRouter,
-  createWebHistory,
-} from 'vue-router/auto'
-
 import { setupLayouts } from 'virtual:generated-layouts'
+import { createMemoryHistory, createRouter, createWebHistory } from 'vue-router'
+import { handleHotUpdate, routes } from 'vue-router/auto-routes'
 
 const { VITE_BASE_URL } = import.meta.env
 
 function setupRouterGuard() {
   const router = createRouter({
     history: import.meta.env.SSR ? createMemoryHistory(VITE_BASE_URL) : createWebHistory(VITE_BASE_URL),
-    extendRoutes: (routes) => {
-      return setupLayouts(routes)
-    },
+    routes: setupLayouts(routes),
   })
 
-  router.beforeEach((to, from) => {
+  router.beforeEach((to: RouteLocationNormalized, from: RouteLocationNormalized) => {
     if (to.path !== from.path)
       NProgress.start()
   })
   router.afterEach(() => {
     NProgress.done()
   })
+
+  if (import.meta.hot) {
+    handleHotUpdate(router)
+  }
   return router
 }
 

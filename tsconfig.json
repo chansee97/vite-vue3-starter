@@ -5,7 +5,7 @@
     "lib": ["ESNext", "DOM"],
     "baseUrl": ".",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "paths": {
       "@/*": ["src/*"]
     },
@@ -13,7 +13,8 @@
     "types": [
       "vite/client",
       "vite-plugin-vue-layouts/client",
-      "vite-plugin-pwa/client"
+      "vite-plugin-pwa/client",
+      "unplugin-vue-router/client"
     ],
     "allowJs": true,
     "strict": true,
@@ -24,5 +25,6 @@
     "isolatedModules": true,
     "skipLibCheck": true
   },
-  "exclude": ["dist", "node_modules"]
+  "include": ["src/**/*", "*.ts", "*.vue"],
+  "exclude": ["dist", "node_modules", "eslint.config.js"]
 }

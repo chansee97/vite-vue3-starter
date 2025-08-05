@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 /**
  *后台服务的环境类型
  * - dev: 后台开发环境

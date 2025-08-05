@@ -1,18 +1,15 @@
-import Unocss from 'unocss/vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import Components from 'unplugin-vue-components/vite'
+import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import Layouts from 'vite-plugin-vue-layouts'
+import Components from 'unplugin-vue-components/vite'
+import { VueRouterAutoImports } from 'unplugin-vue-router'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VitePWA } from 'vite-plugin-pwa'
-import { VueRouterAutoImports } from 'unplugin-vue-router'
+import Layouts from 'vite-plugin-vue-layouts'
 
 export function setVitePlugins() {
   const plugins = [
-    vue(),
-    vueJsx(),
-
     // https://github.com/antfu/unocss
     Unocss(),
 
@@ -42,6 +39,9 @@ export function setVitePlugins() {
       exclude: ['**/components/*.vue'],
       dts: 'src/types/typed-router.d.ts',
     }),
+
+    vue(),
+    vueJsx(),
 
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
